@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>QR Code </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p><b>Enter a text or paste a url to create QR code</b></p>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Enter text or url">
+            <button><b>Generate QR code</b></button>
+        </div>
+        <div class="qr-code">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #3498DB;
+    background-image: url(https://media.istockphoto.com/photos/payment-for-paying-by-smartphone-nfc-technology-picture-id1353527446?b=1&k=20&m=1353527446&s=612x612&w=0&h=EO8H7fvIdgWxC-Ro9qrvrch3jWmtLTOUXFMlo_mFDks=);
+}
+.wrapper{
+    height: 290px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+.wrapper.active{
+    height: 530px;
+}
+header h1{
+    font-size: 25px;
+    font weight: 500;
+}
+header p{
+    margin-top: 5px;
+    color:black;
+    font-size: 16px;
+}
+.wrapper .form{
+    margin: 20px 0 30px;
+}
+.form :where(input,button){
+    width: 90%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius:5px;
+}
+.form input{
+    font-size: 18px;
+    padding: 0 20px;
+    border: 2px solid #999;
+}
+.form button{
+    margin-top: 20px;
+    background: #3498DB;
+    color:#fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+.wrapper .qr-code{
+    display: flex;
+    border-radius: 5px;
+    padding: 33px 0;
+    opacity: 0;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
